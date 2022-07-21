@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<title>CSS Hover Element - Selector OR Child Combinator</title>
+		<style type="text/css">
+			#MainUL li ul li{display:none; background-color: lightpink}
+			#MainUL li:hover ul li{display:block;}
+			#MainUL li:hover ul li ul li{display:none;}
+			#MainUL li ul li:hover ul li{display:block;}
+			#MainUL li ul li:hover ul li ul li{display:none;}
+			#MainUL li ul li ul li:hover ul li{display:block;}
+			#MainUL {background-color: lightyellow; border: 1px solid black;}
+		</style>
+		
+	</head>
+	<body style="background-color: black">
+		
+		<ul id="MainUL" style="border: 2px solid white" >
+			<li>Google
+				<ul style="color: grey">
+					<li>Gmail 
+						<ul style="color: blue"; >
+							<li>Sign Up</li>
+							<li>Sign In
+								<ul style="color: red">
+									<li>Sign In As Admin</li>
+									<li>Sign In As Member</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>Youtube</li>
+					<li>GDrive</li>
+					<li>GMap</li>
+				</ul>
+			</li>
+			<li>Facebook
+				<ul style="color: blue">
+					<li>Sign In
+						<ul style="color: red">
+									<li>Username</li>
+									<li>Password</li>
+								</ul>
+					</li>
+					<li>Create New Account</li>
+				</ul>
+			</li>
+			<li>Microsoft
+				<ul style="color: blue">
+					<li>Bing</li>
+					<li>Linked In</li>
+				</ul>
+			</li>
+			<li>MSN
+				<ul style="color: blue">
+					<li>Microsoft Excel</li>
+					<li>Microsoft Access</li>
+					<li>Microsoft Outlook</li>
+					<li>Microsoft PowerPoint</li>
+					<li>Microsoft Project</li>
+				</ul>
+			</li>
+			<li>Amazon
+				<ul style="color: blue">
+					<li>AWS</li>
+					<li>Ecommerce</li>
+					<li>A-ML</li>
+				</ul>
+			</li>
+			<li>Flipkart
+				<ul style="color: blue">
+					<li>Sign In</li>
+					<li>Sign Up</li>
+				</ul>
+			</li>
+		</ul>
+		
+	</body>
+</html>

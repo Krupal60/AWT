@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>1.4-flex-container-item.html</title>
+
+  <style type="text/css">
+    body {
+      margin: 1px;
+      padding: 1px;
+      font-family: verdana;
+    }
+
+    .main-container {
+      border: 1px solid #FDFEFE;
+      display: inline-flex;
+      /* block level flex container */
+    }
+
+    .item {
+      color: #99A3A4;
+      font-size: 1rem;
+      padding: 0.75rem;
+      text-align: center;
+      transition:5s
+
+    }
+
+    .item-1:hover {
+      background-color: #EBF5FB; margin: 1px; -webkit-transform:skew(45deg);
+                   -moz-transform:skew(45deg);
+                    -ms-transform:skew(45deg);
+                     -o-transform:skew(45deg);
+                        transform:skew(45deg);
+                       
+    }
+
+    .item-2:hover {
+      background-color: #D6EAF8; margin: 1px;  -webkit-transform:scale(1.5,0.5);
+                   -moz-transform:scale(1.5,0.5);
+                    -ms-transform:scale(1.5,0.5);
+                     -o-transform:scale(1.5,0.5);
+                        transform:scale(1.5,0.5);
+                      
+    }
+
+    .item-3:hover {
+      background-color: #AED6F1;margin: 1px; -webkit-transform:rotate3d(1,1,0,360deg);
+                   -moz-transform:rotate3d(1,1,0,360deg);
+                    -ms-transform:rotate3d(1,1,0,360deg);
+                     -o-transform:rotate3d(1,1,0,360deg);
+                        transform:rotate3d(1,1,0,360deg);
+    }
+
+    .item-4:hover {
+      background-color: #85C1E9;margin: 1px;  opacity:1;
+    }
+
+    .item-5:hover {
+      background-color: #5DADE2;margin: 1px;  box-shadow:0px 0px 30px rgb(231, 76, 60);
+ 
+    }
+
+    .item-6:hover {
+      background-color: #3498DB;margin: 1px; text-shadow:3px 3px 3px yellow;
+    }
+
+    .item-7:hover {
+      background-color: #2E86C1;margin: 1px;  border-radius:50%;
+    }
+
+    .item-8:hover {
+      background-color: #2874A6;margin: 1px; overflow:auto;
+    }
+
+    .item-9:hover {
+      background-color: #21618C ;margin: 1px; -webkit-transform:rotateY(60deg);
+                   -moz-transform:rotateY(60deg);
+                    -ms-transform:rotateY(60deg);
+                     -o-transform:rotateY(60deg);
+                        transform:rotateY(60deg);
+                      background-color:blue;
+                      color:white;
+                      position: absolute;
+                      padding: 50px;
+    }
+
+    .item-10:hover {
+      background-color: #1B4F72;margin: 1px;
+    }
+  </style>
+
+</head>
+
+<body style="background-color: black">
+
+  <div class="main-container">
+    <div class="item item-1">Python</div></hr>
+    <div class="item item-2">CSS</div></hr>
+    <div class="item item-3">HTML</div></hr>
+    <div class="item item-4">Java</div></hr>
+    <div class="item item-5">OOPU</div></hr>
+    <div class="item item-6">Android</div></hr>
+    <div class="item item-7">CS</div></hr>
+    <div class="item item-8">PHP</div></hr>
+    <div class="item item-9">QA</div></hr>
+    
+  </div>
+
+</body>
+
+</html>
