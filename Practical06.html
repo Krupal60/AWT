@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .logo {
+
+            background-color: white;
+            height: 100px;
+            width: 41%;
+            float: left;
+            margin-bottom: 10px;
+            padding-left: 40px;
+        }
+
+        .topnav {
+
+            overflow: hidden;
+            height: 50px;
+            background-color: white;
+            padding: 17px;
+
+
+        }
+
+        .topnav a {
+            float: right;
+            color: grey;
+            text-align: right;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            margin-left: 30px;
+        }
+
+        .topnav a:hover {
+            color: rgb(226, 168, 8);
+            text-decoration-line: underline;
+        }
+
+        .topnav a.active {
+
+            color: rgb(226, 168, 8);
+            text-decoration-line: underline;
+        }
+
+        .content {
+
+            height: 400px;
+            width: 500px;
+            float: left;
+            margin: 40px;
+            padding: 20px;
+        }
+
+        .slider {
+
+            height: 400px;
+            width: 500px;
+            float: right;
+            margin: 40px;
+            padding: 20px;
+        }
+
+        button {
+            background-color: rgb(226, 168, 8);
+            color: rgb(127, 95, 14);
+            width: 150px;
+            border: none;
+            border-radius: 25px;
+            padding: 15px;
+        }
+
+        .slider-container {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .menu {
+            position: absolute;
+            left: 0;
+            z-index: 900;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .menu label {
+            cursor: pointer;
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: #fff;
+            border-radius: 50px;
+            margin: 0 0.2em 1em;
+        }
+
+        .menu label:hover,
+        .menu label:focus {
+            background: #1c87c9;
+        }
+
+        .slide {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            z-index: 10;
+            padding: 8em 1em 0;
+            background-size: cover;
+            background-position: 50% 50%;
+            transition: left 0s 0.75s;
+        }
+
+        [id^="slide"]:checked+.slide {
+            left: 0;
+            z-index: 100;
+            transition: left 0.65s ease-out;
+        }
+
+        .slide-1 {
+            background-image: url("image.webp");
+            height: 100%;
+            width: 100%;
+        }
+
+        .slide-2 {
+            background-image: url("image2.webp");
+
+        }
+
+        .slide-3 {
+            background-image: url("image3.webp");
+        }
+
+        .footer {
+           
+            height: 100px;
+            margin: 10px;
+            padding:10px;
+            height:100px ;
+        }
+        .image{
+            padding-right: 10px;
+            float: left;
+        }
+        .footer1{
+            padding-top: 35px;  
+            margin-right: 10px; 
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div>
+        <div style="height: 130px; ">
+            <div class="logo">
+                <img src="New Microsoft Word Document.png" alt="LOGO" height="100px" width="170px">
+            </div>
+            <div class="topnav">
+                <a href="#contact">Contact</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#aboutus">About Us</a>
+                <a href="#shop">Shop</a>
+                <a class="active" href="#home">Home</a>
+            </div>
+        </div>
+        <div style="height: 490px;">
+            <div class="content">
+                <h1 style="font-size: 80px; text-align:left;margin-bottom: 10px; padding-bottom: 0px;">Handmade comfort
+                </h1>
+                <h2
+                    style="color:rgb(74, 73, 73) ; text-align: left;margin-top: 0px; margin-bottom: 20px;padding-right: 160px;">
+                    Powered by Lithuanian Grandmas</h2>
+                <button type="submit" value="Shop Now"
+                    onclick="location.href='//www.etsy.com/in-en/c/clothing-and-shoes?ref=catnav-10923'"><b>Shop
+                        Now</b></button>
+            </div>
+            <div class="slider">
+                <div class="slider-container">
+                    <div class="menu">
+                        <label for="slide-dot-1"></label>
+                        <label for="slide-dot-2"></label>
+                        <label for="slide-dot-3"></label>
+                    </div>
+                    <input id="slide-dot-1" type="radio" name="slides" checked>
+                    <div class="slide slide-1"></div>
+                    <input id="slide-dot-2" type="radio" name="slides">
+                    <div class="slide slide-2"></div>
+                    <input id="slide-dot-3" type="radio" name="slides">
+                    <div class="slide slide-3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            
+            <div class="image" style="width: 45%;">
+                <b>KEEP IN TOUCH</b><br><br>
+                <a href="https://www.instagram.com/">
+                <img src="Instagram.svg"  class="image" alt="insta" height="30px" width="30px" ></a>
+                <a href="https://twitter.com/i/flow/login">
+                <img src="twitter.png" class="image" alt="twitter" height="30px" width="30px"></a>
+                <a href="https://www.facebook.com/">
+                <img src="facebook.png" class="image" alt="facebook" height="30px" width="30px"></a>
+                <a href="https://www.youtube.com/">
+                <img src="youtube.png" class="image" alt="youtube" height="30px" width="30px"></a>
+            </div>
+            <div class="footer1" style="float: right; width: 45%;">
+                <b>© 2022 Etsy, Inc.</b>
+               <b> <a href="/in-en/legal/terms-of-use?ref=ftr" style="color: black; margin-right: 10px;margin-left: 10px;">Terms of Use</a>
+                <a href="/in-en/legal/privacy/?ref=ftr" style="color: black; margin-right:10px;">
+                    Privacy
+                </a>
+                <a href="/in-en/legal/policy/cookies-tracking-technologies/44797645975?ref=ftr"style="color: black; margin-right:10px;">
+                    Interest-based ads
+                </a></b>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
